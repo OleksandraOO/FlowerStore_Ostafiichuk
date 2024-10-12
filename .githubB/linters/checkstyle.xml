@@ -7,7 +7,7 @@
 <module name="Checker">
 
 
-    <!-- Checks that property files contain the same keys. -->
+    <!-- Checks that property files contain the same keys..-->
     <module name="Translation"/>
 
     <!-- Checks that no tab characters in the source code. -->
