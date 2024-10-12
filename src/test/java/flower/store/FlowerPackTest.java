@@ -1,8 +1,7 @@
 package flower.store;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.Assertions;
 
 public class FlowerPackTest {
     private Flower flower;
@@ -31,7 +30,7 @@ public class FlowerPackTest {
     public void testGetPrice() {
         // Test if the price is calculated correctly
         double expectedPrice = vall * valk;  // Price per flower * amount
-        assertEquals(expectedPrice, flowerPack.getPrice(),
+        Assertions.assertEquals(expectedPrice, flowerPack.getPrice(),
          delta, "Price calculation failed");
     }
 
@@ -42,7 +41,7 @@ public class FlowerPackTest {
 
         // Test if the new price reflects the updated amount
         double expectedPrice = vall * vall;  // Price per flower * new amount
-        assertEquals(expectedPrice, flowerPack.getPrice(),
+        Assertions.assertEquals(expectedPrice, flowerPack.getPrice(),
          delta,
           "Updated price calculation failed");
     }
