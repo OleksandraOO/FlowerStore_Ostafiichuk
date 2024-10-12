@@ -1,3 +1,5 @@
+package flower.store;
+
 import flower.store.Flower;
 import flower.store.FlowerColor;
 import flower.store.FlowerPack;
