@@ -8,8 +8,8 @@ public class FlowerPackTest {
     private Flower flower;
     private FlowerPack flowerPack;
 
-    private final double val1 = 10;
-    private final double val2 = 5;
+    private final double vall = 10;
+    private final double valk = 5;
     private final double delta = 0.001;
     
 
@@ -18,19 +18,19 @@ public class FlowerPackTest {
     public void init() {
         // Create a flower object with specific attributes
         flower = new Flower();
-        flower.setPrice(val1);  // Set price per flower
-        flower.setSepalLength(val2);
+        flower.setPrice(vall);  // Set price per flower
+        flower.setSepalLength(valk);
         flower.setFlowerType(FlowerType.ROSE);
         flower.setColor(FlowerColor.RED);
 
         // Create a flower pack with 5 flowers
-        flowerPack = new FlowerPack(flower, (int) val2);
+        flowerPack = new FlowerPack(flower, (int) valk);
     }
 
     @Test
     public void testGetPrice() {
         // Test if the price is calculated correctly
-        double expectedPrice = val1 * val2;  // Price per flower * amount
+        double expectedPrice = vall * valk;  // Price per flower * amount
         assertEquals(expectedPrice, flowerPack.getPrice(),
          delta, "Price calculation failed");
     }
@@ -38,10 +38,10 @@ public class FlowerPackTest {
     @Test
     public void testSetAmount() {
         // Change the amount of flowers in the pack
-        flowerPack.setAmount((int) val1);
+        flowerPack.setAmount((int) vall);
 
         // Test if the new price reflects the updated amount
-        double expectedPrice = val1 * val1;  // Price per flower * new amount
+        double expectedPrice = vall * vall;  // Price per flower * new amount
         assertEquals(expectedPrice, flowerPack.getPrice(),
          delta,
           "Updated price calculation failed");
