@@ -16,10 +16,10 @@ public class Flower {
     // No-argument constructor
     public Flower() {
         // You can initialize default values if needed
-        this.flowerType = FlowerType.DEFAULT_TYPE; // assuming you have a default type
+        this.flowerType = FlowerType.DEFAULT_TYPE;
         this.price = 0.0;
         this.sepalLength = 0.0;
-        this.color = FlowerColor.DEFAULT_COLOR; // assuming you have a default color
+        this.color = FlowerColor.DEFAULT_COLOR;
     }
 
     // Copy constructor
